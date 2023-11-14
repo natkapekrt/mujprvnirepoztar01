@@ -1,96 +1,69 @@
-* {
-    box-sizing: border-box;
-  }
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    cursor: pointer;
+.slideshow-container {
     position: relative;
-    padding: 12px 8px 12px 40px;
-    background: #eee;
-    font-size: 18px;
-    transition: 0.2s;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
- }
-
- ul li:nth-child(odd) {
-    background: #f9f9f9;
-}
-ul li:hover {
-    background: #ddd
-}
-
-ul li.checked {
-    background: #888;
-    color: #fff;
-    text-decoration: line-through;
-}
-
-ul li.checked::before {
-    content: '';
+    background: #f1f1f1f1;
+  }
+  
+  
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  
+  .prev, .next {
+    cursor: pointer;
     position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-}
-.close {
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+ 
+  .next {
     position: absolute;
     right: 0;
-    top: 0;
-    padding: 12px 16px 12px 16px;
-}
-.close:hover {
-    background-color: #f44336;
-    color: white
-}
-.header {
-    background-color: #f44336;
-    padding: 30px 40px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
     color: white;
+  }
+  
+  
+  .dot-container {
     text-align: center;
-    
-}
-.header:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-input {
-    margin: 0;
-    border: none;
-    border-radius: 0;
-    width: 75%;
-    padding: 10px;
-    float: left;
-    font-size: 16px;
-}
-.addBtn {
-    padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
-    color: #555;
-    float: left;
-    text-align: center;
-    font-size: 16px;
+    padding: 20px;
+    background: #ddd;
+  }
+  
+  
+  .dot {
     cursor: pointer;
-    transition: 0.3s;
-    border-radius: 0;
-
-}
-
-
-.addBtn:hover {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
     background-color: #bbb;
-}
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+ 
+  q {font-style: italic;}
+  
+  
+  .author {color: cornflowerblue;}
