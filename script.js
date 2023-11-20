@@ -21,7 +21,26 @@ document.getElementById("outputGen").innerHTML = random1
 console.log(random1);
 
 }
-function opakuj() {
-    window.alert("Funkce se právě provedla");
-    window.setTimeout("opakuj()", 5000);
-    }
+
+switch (new Date().getQuote()) {
+    case 0:
+      quote = "Kdo chce, hledá způsob. Kdo nechce, hledá důvod.";
+      break;
+    case 1:
+        quote  = "Pokud máš odvahu říci „sbohem“, život tě obdaří novým „vítej“.";
+      break;
+    case 2:
+        quote = "Největší dárek, který můžeš někomu dát, je tvůj čas, tvá pozornost a tvoje láska.";
+      break;
+    case 3:
+        quote = "Činy mluví hlasitěji než slova.";
+      break;
+    case 4:
+        quote = "Jsou lidé, díky kterým je svět krásnější prostě jen proto, že tu jsou.";
+      break;
+    case 5:
+        quote= "Každý den nemusí být krásný, ale na každém dni něco krásného je.";
+      break;
+    case 6:
+        quote = "Život začíná tam, kde končí strach.";
+  }
