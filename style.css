@@ -1,12 +1,48 @@
-#example1 {
-    background: url() right bottom no-repeat, url(paper.gif) left top repeat;
-  }
-  #div1 {
-    background: url(img_flower.jpg);
-    background-size: 100px 80px;
-    background-repeat: no-repeat;
-  }
-  body {
-    background-color: rgb(205, 35, 211);
-  }
-  
+.loginPage {    
+    display: flex;
+    justify-content: center;
+    
+   }
+    
+   h3{
+       margin-bottom: -1vh;
+   }
+    
+   .loginInput{
+      margin-bottom: 2vh;
+      
+   }
+    
+   .loginButton{
+   margin-bottom: 2vh;
+   background-color: blue;
+   color: white;
+   border: none;
+   border-radius: 3vh;
+   }
+    
+   .loginButton :hover{
+     cursor: pointer;
+     box-shadow: rgb(128, 128, 128);
+   }
+    
+    
+   .loginDescription{
+       font-size: x-small;
+   }
+    
+   .loginContainer{
+       background-color: rgb(199, 29, 29);
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+       max-width: 40vh;
+    
+       padding-left:5vh ;
+       padding-right: 5vh;
+       padding-bottom: 5vh;
+    
+       border-radius:2.5vh;
+       box-shadow: rgba(17, 17, 182, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    
+   }
